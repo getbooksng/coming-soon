@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="./output.css" rel="stylesheet">
+    <title>Get Books NG</title>
+</head>
+<body class="bg-primary bg-[url(./bg.svg),url(./bg2.svg)] bg-cover h-screen md:px-8 px-2 py-8 font-poppins text-white flex flex-col">
+    <div class="flex gap-3 items-center text-2xl">
+        <img src="./logo.svg" class="h-12" alt="Get Books">
+        <h1 class="">
+            <span class="text-[#e5e5e5]">Get</span>Books
+        </h1>
+    </div>
+
+    <div class="flex flex-col items-center lg:w-7/12 md:w-4/5 m-auto gap-6">
+        <h2 class="font-extrabold text-6xl text-center">
+            <span class="text-[#CAE9FC] opacity-65">Coming</span>
+            Soon
+        </h2>
+        <p class="text-2xl text-center">
+            Buy and sell new and preowned books. Find buyers near you.
+            Get notified when we launch.
+        </p>
+        <form class="relative flex w-full">
+            <div class="relative h-20 w-full min-w-52">
+                <input type="email"
+                       class="h-full w-full rounded-lg bg-white px-3 py-2.5 pr-24 md:pr-44 font-normal text-primary"
+                       placeholder="Please enter your email address" name="email" required />
+            </div>
+            <button
+                    class="absolute right-1 top-2 select-none rounded bg-primary font-poppins h-16 py-2 md:px-12 px-2 text-center disabled:cursor-not-allowed disabled:opacity-50"
+                    type="submit">
+                Notify Me
+            </button>
+
+        </form>
+        <p class="response"></p>
+    </div>
+</body>
+<script src="form.js"></script>
+</html>
