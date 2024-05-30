@@ -556,10 +556,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.\!absolute{
-  position: absolute !important;
-}
-
 .absolute{
   position: absolute;
 }
@@ -568,8 +564,8 @@ video {
   position: relative;
 }
 
-.right-1{
-  right: 0.25rem;
+.right-2{
+  right: 0.5rem;
 }
 
 .top-2{
@@ -592,10 +588,6 @@ video {
   height: 4rem;
 }
 
-.h-20{
-  height: 5rem;
-}
-
 .h-full{
   height: 100%;
 }
@@ -606,10 +598,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.min-w-\[200px\]{
-  min-width: 200px;
 }
 
 .min-w-52{
@@ -640,10 +628,6 @@ video {
 
 .rounded{
   border-radius: 0.25rem;
-}
-
-.rounded-\[7px\]{
-  border-radius: 7px;
 }
 
 .rounded-lg{
@@ -693,16 +677,12 @@ video {
   padding-bottom: 2rem;
 }
 
-.pr-24{
-  padding-right: 6rem;
+.pr-32{
+  padding-right: 8rem;
 }
 
 .text-center{
   text-align: center;
-}
-
-.align-middle{
-  vertical-align: middle;
 }
 
 .font-poppins{
@@ -717,6 +697,11 @@ video {
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-extrabold{
@@ -751,12 +736,29 @@ video {
   opacity: 0.65;
 }
 
-.disabled\:cursor-not-allowed:disabled{
-  cursor: not-allowed;
+.before\:inset-0::before{
+  content: var(--tw-content);
+  inset: 0px;
 }
 
-.disabled\:opacity-0:disabled{
-  opacity: 0;
+.after\:inset-0::after{
+  content: var(--tw-content);
+  inset: 0px;
+}
+
+.after\:w-\[0\.125em\]::after{
+  content: var(--tw-content);
+  width: 0.125em;
+}
+
+.after\:bg-black::after{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.disabled\:cursor-not-allowed:disabled{
+  cursor: not-allowed;
 }
 
 .disabled\:opacity-50:disabled{
@@ -764,8 +766,20 @@ video {
 }
 
 @media (min-width: 768px){
-  .md\:w-\[80\%\]{
-    width: 80%;
+  .md\:right-3{
+    right: 0.75rem;
+  }
+
+  .md\:top-4{
+    top: 1rem;
+  }
+
+  .md\:h-16{
+    height: 4rem;
+  }
+
+  .md\:h-24{
+    height: 6rem;
   }
 
   .md\:w-4\/5{
@@ -782,16 +796,12 @@ video {
     padding-right: 2rem;
   }
 
-  .md\:pr-44{
-    padding-right: 11rem;
+  .md\:pr-48{
+    padding-right: 12rem;
   }
 }
 
 @media (min-width: 1024px){
-  .lg\:w-\[55\%\]{
-    width: 55%;
-  }
-
   .lg\:w-7\/12{
     width: 58.333333%;
   }
