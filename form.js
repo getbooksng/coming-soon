@@ -9,19 +9,18 @@ form.addEventListener('submit', (e) => {
     submitButton.disabled = true;
     responseMessage.innerText = "";
 
-    fetch("https://site-server.herokuapp.com/send", {
+    fetch("https://dev-api.getboks.ng/waitlist/join", {
         method: 'post',
         headers: {'Content-Type' : 'application/json'},
         body: JSON.stringify({
-            email,
-            gb: true
+            email
         })
     })
         .then(res => res.json())
         .then(result => {
             if(result.error) {
-                console.log(result.error);
-                responseMessage.innerText = result.error
+                console.log(result.message);
+                responseMessage.innerText = typeof result.message === 'string' ? result.message : result.message[0];
             } else {
                 form.reset();
                 responseMessage.innerText = 'You have been added to the waitlist 🎉'
