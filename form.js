@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
     submitButton.disabled = true;
     responseMessage.innerText = "";
 
-    fetch("https://dev-api.getbooks.ng/waitlist/join", {
+    fetch("https://beta-api.getbooks.ng/waitlist/join", {
         method: 'post',
         headers: {'Content-Type' : 'application/json'},
         body: JSON.stringify({
